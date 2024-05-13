@@ -1,4 +1,7 @@
-var numeros = [Number(7), Number(14), Number(106)];
-var maior = Math.max(...numeros);
+let valores = [1 , 2, 3];
 
-console.log(`Maior numero: ${maior}`)
+let maior = (a, b) => (a + b + Math.abs(a - b)) / 2;
+
+let maiorABC = valores.reduce(maior);
+
+console.log(`${maiorABC} eh o maior`)
