@@ -1,4 +1,4 @@
-var tdias = 90
+var tdias = 6900
 
 var ano = parseInt(tdias / 365)
 var mes = parseInt((tdias % 365) / 30)
