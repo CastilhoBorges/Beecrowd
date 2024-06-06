@@ -1,4 +1,4 @@
-const valoresT = [2, 2, 2, 2]
+const valoresT = [6, 5, 7, 8]
 
 var a = valoresT.shift()
 var b = valoresT.shift()
