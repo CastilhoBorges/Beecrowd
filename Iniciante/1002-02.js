@@ -1,4 +1,4 @@
-let area;
+
 let raio = 2.00;
 let pi = 3.14159;
 
