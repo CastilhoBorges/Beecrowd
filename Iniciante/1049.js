@@ -1,14 +1,17 @@
 let input = require("fs").readFileSync("1049", "utf8");
 let lines = input.split("\n");
 
+const [c1, c2, c3] = lines;
+console.log(c3);
+
 const animals = {
   vertebrado: {
     ave: {
       carnivoro: "aguia",
-      ornivoro: "pomba",
+      onivoro: "pomba",
     },
     mamifero: {
-      ornivoro: "homem",
+      onivoro: "homem",
       herbivoro: "vaca",
     },
   },
@@ -19,9 +22,10 @@ const animals = {
     },
     anelideo: {
       hematofago: "sanguessuga",
-      ornivoro: "minhoca",
+      onivoro: "minhoca",
     },
   },
 };
 
-const selectAnimal = function (arr) {}
+
+
