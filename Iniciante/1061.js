@@ -7,7 +7,15 @@ const getNumberStr = (arg) => Number(arg.slice(4));
 const getHourStr = (hour) => hour.replaceAll(":", "").split("  ").map(Number);
 
 const diaInicio = getNumberStr(dI);
-const horaInicio = getHourStr(hI);
+const [horaInicio, minutoInicio, segundoInicio] = getHourStr(hI);
 const diaFinal = getNumberStr(dF);
-const horaFinal = getHourStr(hF);
+const [horaFinal, minutoFinal, segundoFinal] = getHourStr(hF);
 
+const inicio =
+  diaInicio * (60 * 24) +
+  horaInicio * 60 +
+  (minutoInicio % 60) +
+  segundoInicio / 60;
+
+
+console.log(inicio);
