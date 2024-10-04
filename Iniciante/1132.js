@@ -8,11 +8,9 @@ const maior = Math.max(...arr);
 
 let count = 0;
 
-for (let i = menor; i < maior; i++) {
-  if (i % 13 === 0) {
-    continue;
-  } else {
-    count = count + i;
+for (let i = menor; i <= maior; i++) {
+  if (i % 13 !== 0) {
+    count += i;
   }
 }
 
