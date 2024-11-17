@@ -8,3 +8,4 @@ for (let i = 1, j = 1; i <= 100; i++) {
 }
 
 console.log(Math.round(sum * 100) / 100);
+a
